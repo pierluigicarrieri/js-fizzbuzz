@@ -1,3 +1,39 @@
 main {
     background-color: #133B4C;
 }
+
+.col-10 {
+    aspect-ratio: 1 / 1;
+    gap: 1rem 1rem;
+}
+
+/* Square class to customize base 
+square element */
+
+.square {
+    aspect-ratio: 1 / 1;
+    width: calc((100% / 10) - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Next 4 class level selectors to 
+customize background color of every 
+square ocurrence */
+
+.basic {
+    background-color: #3689B2;
+}
+
+.fizz {
+    background-color: #5CD6A1;
+}
+
+.buzz {
+    background-color: #F9D166;
+}
+
+.fizz_buzz {
+    background-color: #EE4670;
+}

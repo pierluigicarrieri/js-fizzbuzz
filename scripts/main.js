@@ -1,35 +1,34 @@
-const fizzBuzzContainer = document.getElementById("fizz_buzz_container");
+// Variable for squares container in html
 
-
-
-
-
+const fizzBuzzContainer = document.querySelector(".col-10");
 
 // Main algorithm
 
 for (i = 1; i <= 100; i++) {
 
-    const div = `<div>${i}</div>`;
-    const divFizz = `<div>Fizz</div>`;
-    const divBuzz = `<div>Buzz</div>`;
-    const divFizzBuzz = `<div>FizzBuzz</div>`;
+/* Next 4 variables to define which square to create 
+according to the ""for" cycle iterations below */
+
+    const divBasic = `<div class="square basic">${i}</div>`;
+    const divFizz = `<div class="square fizz">Fizz</div>`;
+    const divBuzz = `<div class="square buzz">Buzz</div>`;
+    const divFizzBuzz = `<div class="square fizz_buzz">FizzBuzz</div>`;
 
     if (i % 3 === 0 && i % 5 === 0) {
 
-        console.log("FizzBuzz");
-        fizzBuzzContainer.innerHTML += 
+        fizzBuzzContainer.innerHTML += divFizzBuzz;
 
     } else if (i % 3 === 0) {
 
-        console.log("Fizz");
+        fizzBuzzContainer.innerHTML += divFizz;
 
     } else if (i % 5 === 0) {
 
-        console.log("Buzz");
+        fizzBuzzContainer.innerHTML += divBuzz;
 
     } else {
 
-        console.log(i);
+        fizzBuzzContainer.innerHTML += divBasic;
 
     }
     
